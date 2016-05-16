@@ -32,7 +32,8 @@
       "platform": "ios",
       "version": "",
       "locator": "ios"
-    }
+    },
+    "android"
   ],
   "name": "handbagdesigner101mobile",
   "description": "HandbagDesigner101Mobile: An Ionic project"

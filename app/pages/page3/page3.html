@@ -1,10 +1,23 @@
-
 <ion-navbar *navbar>
-  <ion-title>
-    Tab 3
-  </ion-title>
+  <ion-title>STREETSTYLE</ion-title>
 </ion-navbar>
 
-<ion-content class="page3">
-
+<ion-content padding class="page3">
+<ion-card *ngFor="#story of foundStories" (click)="goToStory(story.link)">
+  <img src="{{story.image}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{story.title}}
+      </ion-card-title>
+    <p>
+      {{story.summary}}
+    </p>
+  </ion-card-content>
+</ion-card>
+  <ion-infinite-scroll (infinite)="doInfinite($event)" threshold="100px">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>

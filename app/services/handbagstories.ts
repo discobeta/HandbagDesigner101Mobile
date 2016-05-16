@@ -8,7 +8,6 @@ export class HandbagService {
 
     getStories(page,count,type) {
         let stories = this.http.get(`https://handbagdesigner101.com/story/mobile/${page}/${count}/${type}`);
-        // check if we have cache
         return stories;
     }
 }

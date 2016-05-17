@@ -1,8 +1,8 @@
 <ion-navbar *navbar>
-  <ion-title>TRENDS</ion-title>
+  <ion-title>CELEBRITY</ion-title>
 </ion-navbar>
 
-<ion-content padding class="page2">
+<ion-content padding class="page4">
 <ion-card *ngFor="#story of foundStories" (click)="goToStory(story.link)">
   <img src="{{story.image}}"/>
   <ion-card-content>

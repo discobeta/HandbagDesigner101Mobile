@@ -1,3 +1,8 @@
 .tabs {
-	.tab-button-text { font-size: 11px !important }
+
+	.tab-button-text { font-size: 11px !important; }
+	.toolbar-background { background: #333333 !important }
+	.toolbar-title { color: #ffffff; }
+	tabbar[role=tablist] { background: #333333 !important }
+	.tab-button-text { text-transform: none !important; color: #ffffff; }
 }

@@ -28,8 +28,12 @@
   ],
   "cordovaPlatforms": [
     "ios",
-    "android"
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
   ],
-  "name": "handbagdesigner101mobile",
-  "description": "HandbagDesigner101Mobile: An Ionic project"
+  "name": "lochat",
+  "description": "Handbag Designer 101: Discover Handbags, Trends, Celebrity and Streetstyle"
 }

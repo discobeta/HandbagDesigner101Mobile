@@ -8,17 +8,15 @@ import {HandbagService} from '../../services/handbagstories';
 export class Page1 {
 
   constructor(private _service: HandbagService) {
-
   }
-
   public foundStories
   public page = 1
   public count = 20
   public storyType = 'designer'
   public temporaryStories = []
 
-  goToStory(link) {
-  	window.open('http://handbagdesigner101.com'+link, '_system');
+  goToStory(link) {  
+    window.open('http://handbagdesigner101.com'+link, '_blank', 'location=yes');
   }
 
   loadMoreStories() {

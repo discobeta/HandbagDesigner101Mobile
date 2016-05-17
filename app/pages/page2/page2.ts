@@ -18,7 +18,7 @@ export class Page2 {
   public temporaryStories = []
 
   goToStory(link) {
-  	window.open('http://handbagdesigner101.com'+link, '_system');
+  	window.open('http://handbagdesigner101.com'+link, '_blank', 'location=yes');
   }
 
   loadMoreStories() {
